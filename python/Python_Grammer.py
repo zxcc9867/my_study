@@ -220,4 +220,38 @@ endswith 메서드
 # print(data.rstrip())
 
 
-##### 파이썬 문자열 041 ~ 050까지 수행 
+##### 파이썬 문자열 041 ~ 050까지 수행
+
+
+"""
+파이썬 리스트 
+"""
+
+# movie_rank = ["닥터 스트레인지", "스플릿", "럭키", "배트맨"]
+
+# movie_rank.insert(1,'슈퍼맨')
+
+# print(movie_rank)
+
+# del movie_rank[2]
+
+# movie_rank.remove("럭키")
+
+# print(movie_rank)
+
+"""
+
+lang1과 lang2 리스트를 모두 가지고 있는 새로운 리스트를 만들어라. 
+>> lang1 = ["C", "C++", "JAVA"]
+>> lang2 = ["Python", "Go", "C#"]
+
+"""
+lang1 = ["C", "C++", "JAVA"]
+lang2 = ["Python", "Go", "C#"]
+
+
+lang3 = lang1+lang2
+
+print(lang3)
+
+####### 056까지 수행 
