@@ -246,12 +246,282 @@ lang1과 lang2 리스트를 모두 가지고 있는 새로운 리스트를 만�
 >> lang2 = ["Python", "Go", "C#"]
 
 """
-lang1 = ["C", "C++", "JAVA"]
-lang2 = ["Python", "Go", "C#"]
+# lang1 = ["C", "C++", "JAVA"]
+# lang2 = ["Python", "Go", "C#"]
 
 
-lang3 = lang1+lang2
+# lang3 = lang1+lang2
 
-print(lang3)
+# print(lang3)
 
-####### 056까지 수행 
+####### 056까지 수행
+
+
+"""
+다음 리스트에서 최댓값과 최솟값을 출력하라. 
+
+nums = [1, 2, 3, 4, 5, 6, 7]
+
+
+"""
+
+# nums = [1, 2, 3, 4, 5, 6, 7]
+
+# print(f"최댓값은 {max(nums)} 최솟값은 {min(nums)}")
+
+# min=100
+# max=0
+# for i in nums:
+#     if i > max:
+#         max=i
+#     if i < min:
+#         min=i
+# print(f"최댓값은 {max} 최솟값은 {min}")
+
+"""
+다음 리스트의 합을 출력하라. 
+"""
+
+# nums = [1, 2, 3, 4, 5]
+# num_sum = 0
+# print(sum(nums))
+
+# for i in nums:
+#     num_sum = num_sum+ i
+
+# print(num_sum)
+
+
+"""
+다음 리스트에 저장된 데이터의 개수를 화면에 구하라. 
+"""
+
+
+cook = [
+    "피자",
+    "김밥",
+    "만두",
+    "양념치킨",
+    "족발",
+    "피자",
+    "김치만두",
+    "쫄면",
+    "소시지",
+    "라면",
+    "팥빙수",
+    "김치전",
+]
+
+
+# print(f"리스트의 갯수는 {len(cook)}입니다.")
+
+# print([x+'맛있겠다' for x in cook])
+
+"""
+
+다음 리스트의 평균을 구하라. 
+
+"""
+
+# nums = [1, 2, 3, 4, 5]
+
+# print(f"리스트의 평균은{sum(nums)/len(nums)}")
+
+"""
+price 변수에는 날짜와 종가 정보가 저장되어 있다. 날짜 정보를 제외하고 가격 정보만을 출력하라. 
+"""
+
+# price = ["20180728", 100, 130, 140, 150, 160, 170]
+
+# for i in price:
+#     if type(i)==str: # 타입 자체로 비교를 해야하기 때문에, 'str'이 아닌 str이 맞다.
+#         price.remove(i)
+
+# print(f"가격 정보{price}")
+
+
+# res = [x for x in range(10)] # 리스트로 만들어준다.
+
+# print(res)
+
+"""
+슬라이싱을 사용해서 홀수만 출력하라. 
+"""
+
+# nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# print(nums[::2])
+
+# print([x for x in nums if x%2 == 1])
+
+
+"""
+슬라이싱을 사용해서 역방향으로 출력하라. 
+"""
+
+# nums = [1,2,3,4,5]
+
+# rev = reversed(nums)
+
+# print(list(rev))
+
+# print(nums[::-1])
+
+"""
+
+67. join 메서드
+
+"""
+
+# interest = ["삼성전자", "LG전자", "Naver", "SK하이닉스", "미래에셋대우"]
+
+# print('/'.join(interest))
+
+"""
+
+split 메서드 
+
+"""
+
+# string = "삼성전자/LG전자/Naver"
+
+# arr = string.split('/')
+
+# print(arr)
+
+"""
+오름차순 정렬
+"""
+
+# data = [2, 4, 3, 1, 5, 10, 9]
+
+
+# print(list(sorted(data)))
+
+"""
+튜플 
+"""
+
+# movie = ('닥터스트레인지','스플릿','럭키')
+
+# 나의튜플 = (1,) # 이렇게 해야 된다.
+# nums=[]
+# for i in  range(2,100,2):
+
+#     nums.append(i) # 튜플은 생성된 시점에서 불변의 존재가 되기 때문에, 먼저 리스트를 만들고, 리스트를 튜플로 만드는 것이 효율적이다.
+
+# print(tuple(nums))
+
+"""
+
+별표현식
+
+
+>> a, b, *c = (0, 1, 2, 3, 4, 5)
+>> a
+0
+>> b
+1
+>> c
+[2, 3, 4, 5]
+
+"""
+
+# scores = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+
+
+# *valid_score, scores, score2 = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+
+# print(valid_score,scores,score2)
+
+
+"""
+딕셔너리 구성 
+"""
+
+# ice = {'메로나' : 1000,'폴라포' : 1200 , '빵빠레' : 1800}
+
+# ice['죠스바'] = 1200
+# ice['월드콘'] = 1500
+
+# # print(ice["메로나"])
+
+# ice["메로나"] = 1300
+
+# # print(ice)
+
+# ice.pop('메로나')
+# print(ice)
+
+"""
+인벤토리에서 메로나의 가격을 화면에 출력하라.
+"""
+
+# inventory = {"메로나": [300, 20], "비비빅": [400, 3], "죠스바": [250, 100]}
+
+
+# # print(f"메로나의 가격은 {inventory['메로나'][0]}원 메로나의 재고는 {inventory['메로나'][1]}개")
+
+# inventory['월드콘'] = [500,7]
+
+# # print(inventory)
+
+# # 딕셔너리의 키값으로 된 것만 출력
+
+# print(inventory.keys())
+
+# price = inventory.values()
+# print(inventory.values())
+
+# # 금액의 총합
+
+# print(f"가격의 총합은 {sum([x[0] for x in price  ])}")
+
+"""
+update 메서드
+"""
+
+# icecream = {
+#     "탱크보이": 1200,
+#     "폴라포": 1200,
+#     "빵빠레": 1800,
+#     "월드콘": 1500,
+#     "메로나": 1000,
+# }
+# new_product = {"팥빙수": 2700, "아맛나": 1000}
+
+# a = icecream.update(new_product) # 이렇게 하면 출력이 안된다. update는 내부적으로 딕셔너리를 갱신하지만, 어떠한 값도 반환하지 않기 때문에 None이 출력된다.
+
+# icecream.update(new_product)
+
+# print(a) # None 출력
+
+# print(icecream) # 제대로 출력
+
+"""
+zip과 dict
+
+아래 두개의 튜플을 하나의 딕셔너리로 변환하라. keys를 키로, vals를 값으로 result 이름의 딕셔너리로 저장한다. 
+"""
+
+# keys = ("apple", "pear", "peach")
+# vals = (300, 250, 400)
+
+
+# result = dict(zip(keys,vals)) # zip은 여러개의 객체를 인수로 받아서 튜플로 묶어준다. 
+
+# print(result)
+
+"""
+"""
+
+# date = ["09/05", "09/06", "09/07", "09/08", "09/09"]
+# close_price = [10500, 10300, 10100, 10800, 11000]
+
+# print(dict(zip(date,close_price))) # zip은 여러개의 리스트도 묶을 수 있고, 이를 dict로 하면 딕셔너리가 생성된다. 
+
+## 5/8일 까지 했다. 
+
+"""
+다음은 101번부터 
+"""
