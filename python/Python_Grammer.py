@@ -508,7 +508,7 @@ zip과 dict
 # vals = (300, 250, 400)
 
 
-# result = dict(zip(keys,vals)) # zip은 여러개의 객체를 인수로 받아서 튜플로 묶어준다. 
+# result = dict(zip(keys,vals)) # zip은 여러개의 객체를 인수로 받아서 튜플로 묶어준다.
 
 # print(result)
 
@@ -518,10 +518,50 @@ zip과 dict
 # date = ["09/05", "09/06", "09/07", "09/08", "09/09"]
 # close_price = [10500, 10300, 10100, 10800, 11000]
 
-# print(dict(zip(date,close_price))) # zip은 여러개의 리스트도 묶을 수 있고, 이를 dict로 하면 딕셔너리가 생성된다. 
+# print(dict(zip(date,close_price))) # zip은 여러개의 리스트도 묶을 수 있고, 이를 dict로 하면 딕셔너리가 생성된다.
 
-## 5/8일 까지 했다. 
+## 5/8일 까지 했다.
 
 """
 다음은 101번부터 
 """
+
+# 파이썬 분기문
+
+## 5/13일
+
+"""
+사용자로부터 하나의 숫자를 입력받고, 입력받은 숫자에 10을더해 출력해라. 
+"""
+
+# num = int(input("숫자를 입력하세요. : "))
+
+# print(f"입력받은 숫자에 10을 더한 값은 {num+10}입니다.")
+
+"""
+사용자로부터 받은 단어가 리스트에 있는지 확인 
+"""
+
+# fruit = ["사과", "포도", "홍시"]
+
+# name = input("과일을 입력하세요. ")
+
+# if name in fruit:
+#     print(f"{name}이 존재합니다.")
+# else:
+#     print(f"{name}이 존재하지 않습니다.")
+
+"""
+딕셔너리에서 값을 찾기 
+"""
+
+# fruit = {"봄": "딸기", "여름": "토마토", "가을": "사과"}
+
+# name = input("과일을 입력하세요.")
+
+# for i in fruit:
+#     if fruit[i] == name:
+#         print(f"{name}이 존재합니다.")
+#         break
+# else: # else 절은 if가 아닌 for 루프에 속한다. 즉, for 루프를 다돌고 , break로 인해 중단되지 않았을 때 실행이 된다. 
+#     print(f"{name}이 존재하지 않습니다.")
