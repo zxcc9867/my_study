@@ -563,5 +563,22 @@ zip과 dict
 #     if fruit[i] == name:
 #         print(f"{name}이 존재합니다.")
 #         break
-# else: # else 절은 if가 아닌 for 루프에 속한다. 즉, for 루프를 다돌고 , break로 인해 중단되지 않았을 때 실행이 된다. 
+# else: # else 절은 if가 아닌 for 루프에 속한다. 즉, for 루프를 다돌고 , break로 인해 중단되지 않았을 때 실행이 된다.
 #     print(f"{name}이 존재하지 않습니다.")
+
+
+"""
+사용자로부터 문자 한개를 입력받고, 소문자일 경우 대문자로, 대문자일 경우 소문자로 변경해서 출력해라. 
+"""
+
+alpha = input("영문자를 입력해주세요.")
+
+print(alpha.upper() if alpha.islower() == True else alpha.lower() ) # 삼항 연산자 사용 
+
+"""
+삼항 연산자 -> 조건이 참일 때 출력 if 조건 else 조건이 거짓일 때의 출력 
+"""
+
+"""
+5/13 121까지 수행 
+"""
