@@ -621,31 +621,91 @@ map(function, iterable)
 먼저 앞에서 부터 12자리의 숫자에 2,3,4,5,6,7,8,9,2,3,4,5를 차례로 곱한 뒤 그 값을 전부 더하고, 
 연산 결과 값을 11로 나누면 나머지가 나오는데 11에서 나머지를 뺀 값이 주민등록 번호의 마지막 값이 된다. 
 """
-nums = input("주민번호를 입력하세요. 12자리 (하이픈 포함) : ")
+# nums = input("주민번호를 입력하세요. 12자리 (하이픈 포함) : ")
 
-# 하이픈을 기준으로 주민번호를 분리
-first_number, second_number = nums.split("-")
+# # 하이픈을 기준으로 주민번호를 분리
+# first_number, second_number = nums.split("-")
 
-# 하이픈을 제거하고 주민번호를 합침
-full_number = list(first_number + second_number)
+# # 하이픈을 제거하고 주민번호를 합침
+# full_number = list(first_number + second_number)
 
-print(full_number)
+# print(full_number)
 
-multiple_num = [2,3,4,5,6,7,8,9,2,3,4,5]
+# multiple_num = [2,3,4,5,6,7,8,9,2,3,4,5]
 
-# 결과를 저장할 리스트 초기화
-numbers = []
+# # 결과를 저장할 리스트 초기화
+# numbers = []
 
-# full_number의 각 자릿수를 순회
-for i in range(0,len(full_number)):
-    # 각 자릿수를 정수로 변환
-    numbers.append(int(full_number[i])*multiple_num[i])
+# # full_number의 각 자릿수를 순회
+# for i in range(0,len(full_number)):
+#     # 각 자릿수를 정수로 변환
+#     numbers.append(int(full_number[i])*multiple_num[i])
 
-last_num = 11 - sum(numbers)%11
+# last_num = 11 - sum(numbers)%11
 
-identity_number=nums+str(last_num)
+# identity_number=nums+str(last_num)
 
 
-print(identity_number)
+# print(identity_number)
 
 ## 5/20 ### 
+
+
+
+"""
+while 문에 대해서 
+
+while 조건문:
+    수행할 문장 1 
+    수행할 문장 2 
+
+
+"""
+
+# text_message="""
+
+# 커피 판매기 입니다. 아래는 메뉴입니다. 
+
+# 1. 에스프레소 : 500 
+# 2. 카라멜 마끼아또 : 1000
+# 3. 초코 스무디 : 1500
+
+# """
+
+# print(text_message)
+
+# ans = input("돈과 음료를 입력하세요").split()
+
+# money=int(ans[0])
+
+# while money>=0:
+#     if money=='에스프레소':
+#         money-=500
+#     elif money=='카라멜 마끼아또':
+#         money-=1000
+#     else:
+#         money-=1500
+    
+
+## continue 문 
+
+# 아래의 내용은 짝수일 경우, while문의 처음으로 돌아가게 함으로써 
+
+# 짝수의 값에 +1을하고 , if문에 맞지 않으므로, 건너뛰고 출력하므로 홀수가 출력된다. 
+# a=0 
+
+# while a < 10:
+#     a = a + 1
+#     if a % 2 == 0:
+#         continue
+#     print(a)
+
+# 튜플에 대해서 for문으로 출력하기 
+
+a = [(1,2),(3,4),(5,6)]
+
+
+for (first,last) in a:
+    print(first + last)
+
+

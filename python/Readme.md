@@ -9,9 +9,15 @@
 
      <!-- <a href="https://wikidocs.net/7024">코딩 연습 사이트</a> -->
 
+* 2024/06/30 ##< 점프투 파이썬 >
 
 * 메모 ( 문법 )
 
     * <b>map 함수 -> map(function, iterable)</b>
+    - list(map(int,[1.1,1.2,1.3,1.4,1.5]))
+    - list(map(func_1,[1,2,3,4,5])) -> def func(x): return pow(x,5) # x의 5 제곱 반환  
 
     * <b>3항 연산자 alpha.upper() if alpha.islower() == True else alpha.lower() </b>
+
+    * <b>while문과 continue문</b>
+    - while문을 수행할 때, 조건에 맞지 않으면 while문을 빠져나가지 않고, while문의 조건문으로 돌아가고 싶을 때 
