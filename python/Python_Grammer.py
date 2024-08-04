@@ -702,10 +702,17 @@ while 조건문:
 
 # 튜플에 대해서 for문으로 출력하기 
 
-a = [(1,2),(3,4),(5,6)]
+# a = [(1,2),(3,4),(5,6)]
 
 
-for (first,last) in a:
-    print(first + last)
+# for (first,last) in a:
+#     print(first + last)
 
+# for문과 continue문 
 
+# for i in range(1,10):
+
+#     if i % 3 == 0:
+#         continue # for문의 맨앞으로 돌아간다. 
+
+####### 점프투파이썬 for문까지 수행 ### 

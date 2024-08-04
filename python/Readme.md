@@ -9,7 +9,15 @@
 
      <!-- <a href="https://wikidocs.net/7024">코딩 연습 사이트</a> -->
 
-* 2024/06/30 ##< 점프투 파이썬 >
+* 2024/06/30 
+
+## < 점프투 파이썬 >
+
+* [점프투 파이썬 코딩 연습](https://wikidocs.net/book/1)
+
+## < 패스트 캠퍼스 - 파이썬 데이터 분석 >
+
+* [패스트 캠퍼스 강의](https://skillflo.io/course-detail/12239/10039?tab=status)
 
 * 메모 ( 문법 )
 
