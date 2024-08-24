@@ -1,0 +1,33 @@
+{
+  "name": "infrun-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "format": "prettier --write \"src/**/*.{js,ts,json,css,md}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.15.11"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.0.0"  
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
