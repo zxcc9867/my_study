@@ -1,0 +1,17 @@
+td{
+    font-size: 2em;
+    font-family: Gulim;
+    text-align: left;
+}
+
+.test{ 
+    font-size: 3em;
+    text-align: right;
+    color: blue;
+}
+
+.test2{
+    font-size: 3em;
+    text-align: left;
+    color: red;
+}
