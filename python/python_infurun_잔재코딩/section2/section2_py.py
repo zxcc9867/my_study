@@ -51,6 +51,3 @@ def factor_divider(num: int) -> list:
 
 
 print(factor_divider(int(input("숫자를 입력하세요. : "))))
-
-
-
