@@ -26,5 +26,4 @@ user1.deduct_money(400)
 account1.deposit(400)
 
 # 보유 현금 및 계좌목록을 출력한다.
-
 user1.get_assets()
